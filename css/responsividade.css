@@ -5,43 +5,21 @@
 :root{
     --branco: #FFFFFF;
     --preto: #000000;
-    --cinza-medio: #74787A;
-    --cinza-claro: #E6EFE9;
-    --roxo: #70398C;
-    --fonte-principal: 'Roboto', sans-serif;   
+    --Primary: #70398C;
+    --Primary-Destaque: #EB1EDA;
+    --Secundary: #D4E7DB;
+    --Tertiary:#30B27F;
+    --superficie_clara: #F6F5F2;
+    --superficie_verde-claro: #E6EFE9;
+    --cinza_700: #323232;
+      
 
 }
 
-body{
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "main main"
-    "footer footer footer"
-    ;  
-
-    grid-template-columns: 1fr;
-    font-family: var(--fonte-principal);  
-    font-size: 8px; 
-}
-
-.o-header{
-    grid-area: header;   
-   
-}
-
- 
-/* Principal */
-
-.o-principal{
-    grid-area: main;
-}
-
-/* Rodapé */
-
-.o-rodape{
-    grid-area: footer;
-   
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-decoration: #323232;
 }
 
 /* Media Queries */
@@ -50,84 +28,20 @@ body{
 
 
 
-@media (min-width: 280px) and (max-width: 767px){
-    
-    .container-principal {
-        display: grid;
-        grid-template-columns: auto;
-        gap: 1rem;
-        
-    } 
-    
-    .logo-banner{
-        
-        object-fit: cover;
-        width:100%;
-        height: 400px;
-          
-        
-        
-     }
-}
+/* `xs` returns only a ruleset and no media query*/
 
 
-    
-    
-@media (min-width: 780px) and (max-width: 1279px){
-        .container-principal {
-            display: grid;
-            grid-template-columns: auto auto;
-            gap: 1rem;
-        }
- 
-    
-    }
+/* `sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {  }
 
-/* Tables */
+/* `md` applies to small devices (landscape phones, less than 768px) */ 
+@media (max-width: 767.98px) {  }
 
-    @media (min-width: 1280px) and (max-width: 1400px){
-        .container-principal {
-            display: grid;
-            justify-content: center;
-            grid-template-columns: auto auto;
-            gap: 1rem;
-        }
-   
+/* `lg` applies to medium devices (tablets, less than 992px)*/ 
+@media (max-width: 991.98px) {  }
 
-    /* Cards do Principal */
+/* `xl` applies to large devices (desktops, less than 1200px)*/ 
+@media (max-width: 1199.98px) {  }
 
-.card_principal{    
-    display: flex;
-    justify-content: center;
-    max-width: 100%; 
-    background-color: var(--cinza-claro);
-    margin: 1rem;
-    
-}
-
-.card_imagem {
-    object-fit: cover;
-    width: 50%; 
-    max-height: 120%;
-}
-
-.titulo_destaque{
-    
-    
-    text-align:left;
-    padding-left: 1rem;
-    padding-top: 2rem;
-    
-
-}
-
-
-.paragrafo_destaque{
-    font-size: 1.25;
-    text-align:left;
-}
-
-
-
-}
-
+/*`xxl` applies to x-large devices (large desktops, less than 1400px)*/ 
+@media (max-width: 1399.98px) {  }
