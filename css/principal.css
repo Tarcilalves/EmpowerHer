@@ -1,6 +1,7 @@
 
 /* Navegação*/
 
+
 .container_navegacao{
     padding: 1rem 1rem ;
 }
@@ -17,45 +18,84 @@
 }
 
 /* Cards do Principal */
-.container-principal{
+
+.container-principal{ 
     display: grid;
     grid-template-columns: auto auto;
-    margin: 0;
-
-   margin: 1rem;
-   gap: .5rem;
-}
-
-.card_conteudo{
-    display: flex; 
-    gap: 1rem;
-    background-color: var(--superficie_clara);
+    justify-content: center;
     padding: 0;
-    margin: 0 ;
-
+      
+    gap: 1.5rem;
+    margin-bottom: 3rem ;  
    
-    
 }
 
-
-.card_textual{
-    padding-top: .5rem;
-    padding-bottom: 1.5rem; 
+.card{
+    border: none;
+    width: 90%;    
+}
+.card_conteudo{
+    
     background-color: var(--superficie_clara);
-    color: var(--cinza-700);
+}
+
+.card_img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
     
 }
+
 .card-title{
     font-weight: 900;
     font-size: 160%;
-    
-}
-.card-text{
-    font-size: 120%;
-    padding-right:1.25rem;
+    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+
 }
 
-.btn-primary{
-    background-color: var(--Primary-Destaque);
-    border: none;
+.card-text{
+    height: 60%;
+    padding-right: 3rem;
+}
+
+/* Cards do Info-carrossel */
+.cor-Destaque{
+    background-color: var( --Primary);
+    padding: 2rem;
+}
+
+.card-destaque{ 
+    
+    display: flex;
+    flex-wrap: wrap;
+      
+    gap: 1rem;
+    width: 80%;
+    height: 50%;
+    
+}
+.container-item{
+    border-end-end-radius: 30px;
+
+    
+}
+
+.title-destaque{
+    font-weight: 500;
+    font-size: 160%;
+    padding-top: 1rem;
+
+}
+.text-destaque{
+    
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+.img-thumbnail{
+    padding: 1rem;
 }

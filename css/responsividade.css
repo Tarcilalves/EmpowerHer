@@ -22,6 +22,18 @@
     text-decoration: #323232;
 }
 
+
+.btn-primary{
+    background-color: var(--Primary-Destaque);
+    border: none;
+    border-radius: 30px;
+    padding: 0 1.5rem;
+}
+.link-botao{
+    text-align: right;
+    padding-right: 1rem;
+}
+
 /* Media Queries */
 
 /* Para telas pequenas */
@@ -45,3 +57,37 @@
 
 /*`xxl` applies to x-large devices (large desktops, less than 1400px)*/ 
 @media (max-width: 1399.98px) {  }
+
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .carousel-inner .carousel-item .col-md-4 {
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    .carousel-inner .carousel-item {
+      display: flex;
+      flex-direction: row;
+    }
+    .carousel-inner .carousel-item .col-md-4 {
+      flex: 1 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (min-width: 993px) {
+    .carousel-inner .carousel-item {
+      display: flex;
+      flex-direction: row;
+    }
+    .carousel-inner .carousel-item .col-md-4 {
+      flex: 1 0 33.3333%;
+      max-width: 33.3333%;
+    }
+  }
